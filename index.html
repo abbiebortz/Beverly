@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UX Explorer for Kids</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id="main-content">
+        <h1>Welcome to UX Explorer!</h1>
+        <p>Join our adventure to learn about websites!</p>
+        <div id="character">
+            <img src="pixel.png" alt="Friendly Guide">
+            <p>Hi! I'm Pixel, your guide!</p>
+        </div>
+        <section id="color-challenge">
+            <h2>Color Challenge</h2>
+            <p>Choose the correct color for box A to match the theme!</p>
+            <div class="color-boxes">
+                <div class="color-box" id="box1">A</div>
+                <div class="color-box" id="box2" style="background-color: #00ff00;">B</div> <!-- Green -->
+                <div class="color-box" id="box3" style="background-color: #0000ff;">C</div> <!-- Blue -->
+            </div>
+            <p>Select a color for box A:</p>
+            <button onclick="setColor('#ff0000')">Red</button>
+            <button onclick="setColor('#ffff00')">Yellow</button>
+            <button onclick="setColor('#ff00ff')">Magenta</button>
+            <div id="color-feedback"></div>
+        </section>
+        <section id="text-challenge">
+            <h2>Text Challenge</h2>
+            <p>Adjust the font size for comfortable reading and check your answer!</p>
+            <div class="text-sample">Sample Text</div>
+            <input type="range" id="text-size-answer" min="10" max="30" value="16">
+            <button onclick="checkTextSize()">Check Answer</button>
+            <div id="text-feedback"></div>
+        </section>
+        <section id="contrast-challenge">
+            <h2>Contrast Challenge</h2>
+            <p>Adjust the background and text colors to make the text easily readable!</p>
+            <div id="contrast-sample" class="contrast-sample">Is this text easy to read?</div>
+            <p>Pick a background color:</p>
+            <input type="color" id="background-color">
+            <p>Pick a text color:</p>
+            <input type="color" id="text-color">
+            <button onclick="checkContrast()">Check Answer</button>
+            <div id="contrast-feedback"></div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

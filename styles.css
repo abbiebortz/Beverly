@@ -1,0 +1,59 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #A7CDF2; /* Lighter and more playful background */
+    color: #333;
+}
+
+#main-content {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px; /* Rounded borders */
+    border: 5px solid #333;
+    background-color: #FFFFFF; /* Add a white background for the content area */
+}
+
+.color-boxes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.color-box {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 10px;
+    border: 1px solid #000;
+}
+
+
+/* Enhanced button styles for interactivity */
+button {
+    background-color: #4CAF50; /* More inviting color */
+    border-radius: 5px; /* Rounded corners for the button */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Character styling */
+#character {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#character img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%; /* Make the image round */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#character p {
+    margin-top: 5px;
+    font-size: 18px;
+    color: #333;
+}
